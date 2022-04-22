@@ -1,0 +1,23 @@
+.App {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+}
+
+
+.navbar-container{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links{
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+
+}
+.navbar-link{
+  margin: 0 10px;
+}
