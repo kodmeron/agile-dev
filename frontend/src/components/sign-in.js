@@ -20,6 +20,11 @@ function signIn() {
                     type="text"
                     placeholder="Lösenord"
                 />
+                <br />
+                <button>Logga in</button>
+                <br />
+                <br />
+                <button>Skapa användare</button>
             </div>
 
         </div>
