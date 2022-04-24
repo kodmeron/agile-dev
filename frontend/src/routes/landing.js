@@ -1,8 +1,11 @@
 import React from 'react'
+import signIn from '../components/sign-in'
 
 function Landing() {
   return (
-    <div>Landing</div>
+    <div>
+      <signIn/>
+    </div>
   )
 }
 
