@@ -1,15 +1,15 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
 
-const UpdateUser = ({_id}) => {
+const UpdateUser = ({id,closedUpdate}) => {
     const [information, setInformation] = useState({
         name: "",
         age: ""
       });
-      const SubmitFunction = (e) => {
-        console.log(information)
+      const SubmitFunction = () => {
+        window.location.reload();
         axios
-          .patch(`http://localhost:3001/controller/${_id}`, information)
+          .patch(`http://localhost:3001/controller/${id}`, information)
           .then((res) => {
             setInformation({
               name: "",
@@ -26,7 +26,7 @@ const UpdateUser = ({_id}) => {
       };
   return (
     <div>
-        <form onSubmit={SubmitFunction}>
+        <form onSubmit={() => {SubmitFunction();closedUpdate();}}> 
         <input onChange={onAnyChange} name="name" placeholder='Namn...'/>
         <input onChange={onAnyChange} name="age" type="number" placeholder='Ålder...'/>
         <button>Uppdatera Utbildning</button>

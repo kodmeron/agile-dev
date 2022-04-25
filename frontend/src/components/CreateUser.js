@@ -11,8 +11,7 @@ const CreateUser = () => {
           ...data,
           [e.target.name]: e.target.value,
         }))};
-        const SubmitFunction = e => {
-            e.preventDefault()
+        const SubmitFunction = () => {
             axios
             .post("http://localhost:3001/controller/", profile)
             .then((res) => {
