@@ -3,7 +3,15 @@
   grid-template-columns: repeat(12,1fr);
 }
 
+.user-content {
+}
 
+.user-link {
+}
+
+.user-profile {
+  margin: 0 10px;
+}
 .navbar-container{
   width: 90%;
   margin: 0 auto;

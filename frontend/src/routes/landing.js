@@ -1,10 +1,12 @@
 import React from 'react'
-import signIn from '../components/sign-in'
+import SignIn from '../components/SignIn'
 
 function Landing() {
+  
   return (
     <div>
-      <signIn/>
+      <SignIn/>
+      
     </div>
   )
 }

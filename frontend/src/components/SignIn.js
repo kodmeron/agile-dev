@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function signIn() {
+function SignIn() {
     return (
         <div>
 
@@ -24,11 +25,11 @@ function signIn() {
                 <button>Logga in</button>
                 <br />
                 <br />
-                <button>Skapa användare</button>
+                <Link to="/createUser">Skapa användare</Link>
             </div>
 
         </div>
     )
 }
 
-export default signIn
+export default SignIn
