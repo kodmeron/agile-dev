@@ -29,7 +29,7 @@ const UpdateUser = ({id,closedUpdate}) => {
         <form onSubmit={() => {SubmitFunction();closedUpdate();}}> 
         <input onChange={onAnyChange} name="name" placeholder='Namn...'/>
         <input onChange={onAnyChange} name="age" type="number" placeholder='Ålder...'/>
-        <button>Uppdatera Utbildning</button>
+        <button>Uppdatera</button>
         </form>
             
     </div>

@@ -2,11 +2,14 @@
   display: grid;
   grid-template-columns: repeat(12,1fr);
 }
-
+/* 
 .user-content {
-}
+  display: flex;
+  justify-content: space-evenly;
+} */
 
 .user-link {
+  color: white;
 }
 
 .user-profile {
@@ -28,4 +31,6 @@
 }
 .navbar-link{
   margin: 0 10px;
+  color: white;
+  text-decoration: none;
 }

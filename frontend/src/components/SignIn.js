@@ -7,26 +7,19 @@ function SignIn() {
 
             <div className='main-container'>
                 <h2>Användarnamn:</h2>
-                <br />
                 <input
                     id='userName'
                     type="text"
                     placeholder='Användarnamn'
                 />
-                <br />
-                <h2>Lösernord:</h2>
-                <br />
+                <h2>Lösenord:</h2>
                 <input
                     id='userPass'
                     type="text"
                     placeholder="Lösenord"
                 />
-                <br />
-                <button>Logga in</button>
-                <br />
-                <br />
-                <Link to="/createUser">Skapa användare</Link>
             </div>
+                <Link className='user-link' to="/Profile">Logga in</Link>
 
         </div>
     )
