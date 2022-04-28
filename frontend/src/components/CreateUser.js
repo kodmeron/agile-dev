@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import axios from 'axios'
+import Navbar from './Navbar';
 
 const CreateUser = () => {
     const [profile,setProfile] = useState({
@@ -27,10 +28,19 @@ const CreateUser = () => {
         }
   return (
     <div>
-        <form onSubmit={SubmitFunction}>
-        <input onChange={onAnyChange} name='name' placeholder='Namn...'/>
-        <input onChange={onAnyChange} name='age' type="number" placeholder='Ålder...'/>
-        <button>Skapa Användare</button>
+      <Navbar/>
+        <form action='/Profile' onSubmit={SubmitFunction}>
+      <div className='create-user'>
+        <h1>Skapa Användare</h1>
+        <input onChange={onAnyChange} name='name' placeholder='Namn...' required/>
+        <input onChange={onAnyChange} name='age' type="number" placeholder='Ålder...' required/>
+        <input onChange={onAnyChange} name='about' placeholder='Om dig själv...' required/>
+        <input onChange={onAnyChange} name='job' placeholder='Jobb...' required/>
+        <input onChange={onAnyChange} name='location' placeholder='Plats...' required/>
+        <input onChange={onAnyChange} name='gender' placeholder='Kön...' required/>
+        <input onChange={onAnyChange} name='lookingFor' placeholder='Vad söker du efter...' required/>
+        <button>Skapa</button>
+      </div>
         </form>
     </div>
   )

@@ -5,8 +5,7 @@ const UserService = require('./service');
 
 router.post('/', async (req,res) => {
     const user = await UserService.createUser(req.body);
-    user ? 
-        res.status(200).send(user) : res.status(404).send({ error: "Unable to create User" })
+    user ? res.status(200).send(user) : res.status(404).send({ error: "Unable to create User" })
 })
 router.get('/', async (req,res) => {
     const showUsers = await UserService.showUsers()

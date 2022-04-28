@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div>
         <div className="navbar-container">
-            <h1>Bombrr</h1>
+            <Link className='navbar-header-link' to="/">Applikations Namn</Link>
             <div className="navbar-links">
                 <Link to="/" className="navbar-link">Home</Link>
                 <Link to="/Profile" className="navbar-link">Profile</Link>

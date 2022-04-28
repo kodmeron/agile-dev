@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React,{useState} from 'react'
+import { Link } from 'react-router-dom';
 import UpdateUser from './UpdateUser';
 
 const ShowUsers = ({_id,name,age}) => {
@@ -22,7 +23,7 @@ const ShowUsers = ({_id,name,age}) => {
       };
   return (
     <div>
-        <h3 className='user-profile' >Namn: {name} <br/> Ålder: {age}</h3>
+        <Link to={`/Profile/${_id}`} className='profile-link'>Namn: {name}</Link>
         <button name={_id}  onClick={updateUser}>Uppdatera Information</button>
         <button name={_id}  onClick={deleteUser}>Ta bort</button>
         {updateCollapse ? 

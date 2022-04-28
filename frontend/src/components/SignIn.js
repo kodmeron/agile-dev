@@ -18,8 +18,8 @@ function SignIn() {
                     type="text"
                     placeholder="Lösenord"
                 />
-            </div>
                 <Link className='user-link' to="/Profile">Logga in</Link>
+            </div>
 
         </div>
     )

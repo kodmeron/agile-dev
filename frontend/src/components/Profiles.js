@@ -14,12 +14,12 @@ const Profiles = () => {
   return (
     <div>
         <Navbar/>
-            <Link className='user-link' to="/createUser">Skapa användare</Link>
         <h1 style={{textAlign:'center'}}>Våra Användare </h1>
         <div className='user-content'>
             {users.map(x => {return(
-            <div key={x._id}><ShowUsers {...x} />
+              <div key={x._id}><ShowUsers {...x} />
             </div>)})}
+              <Link className='user-link' to="/createUser">Skapa användare</Link>
             </div>
     </div>
   )

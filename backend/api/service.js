@@ -2,11 +2,18 @@ const User = require("./model");
 
 module.exports = class UserService {
     static async createUser(body) {
-        if (body.name && body.age) {
+        if (body) {
           const data = body;
           const user = new User({
             name: data.name,
-            age: data.age
+            age: data.age,
+            about: data.about,
+            job: data.job,
+            location: data.location,
+            gender: data.gender,
+            lookingFor : data.gender
+
+
           });
           await user.save();
           return user;

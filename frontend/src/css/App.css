@@ -2,11 +2,11 @@
   display: grid;
   grid-template-columns: repeat(12,1fr);
 }
-/* 
-.user-content {
-  display: flex;
-  justify-content: space-evenly;
-} */
+
+.main-container {
+  display: grid;
+  justify-content: center;
+}
 
 .user-link {
   color: white;
@@ -23,6 +23,12 @@
   align-items: center;
 }
 
+.navbar-header-link {
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+}
+
 .navbar-links{
   display: flex;
   justify-content: space-evenly;
@@ -33,4 +39,51 @@
   margin: 0 10px;
   color: white;
   text-decoration: none;
+}
+
+.profile-page {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-link {
+  font-size: 30px;
+  color: white;
+  margin: 0 10px;
+}
+.profile-image {
+  position: relative;
+  margin: 0 auto;
+  background-color: white;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.profile-image-explainer {
+  position: absolute;
+  top: 30%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 50px;
+}
+
+
+.create-user {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-user input,.create-user button,.update-user input,.update-user button,button{
+  margin: 5px 0 ;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+button {
+  cursor: pointer;
 }
